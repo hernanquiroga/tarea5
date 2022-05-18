@@ -14,20 +14,21 @@ Console.WriteLine("(S) para SI , (N) para NO.");
 
 var eleccion = Console.ReadLine();
 
-if (eleccion.ToUpper() == "S")
+while (eleccion.ToUpper() == "S")
 {
+    Console.Clear();
     Console.WriteLine(nombre + " has elegido ingresar al laberinto, bienvenido ...");
-    Console.WriteLine("Hola " + nombre + " bienvenido a mi mundo."); /* da la bienvenida al usuario*/
     Console.WriteLine("Querés cruzar la entrada al laberinto ? Si ó No ?");
     Console.WriteLine("(S) para SI , (N) para NO.");
     eleccion = Console.ReadLine();
-
 }
-else if (eleccion.ToUpper() == "N")
+
+if (eleccion.ToUpper() == "N")
 {
     Console.WriteLine(nombre + " no quieres entrar al laberinto, pero ya estás en mi mundo LOL !");
-} else {
+}
+else {
     Console.WriteLine("Jamás podrás salir de aquí !! salvo que cierres esta ventanita.");
 }
 
-   
+
