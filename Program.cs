@@ -20,6 +20,8 @@ if (eleccion.ToUpper() == "S")
     Console.WriteLine("Hola " + nombre + " bienvenido a mi mundo."); /* da la bienvenida al usuario*/
     Console.WriteLine("Querés cruzar la entrada al laberinto ? Si ó No ?");
     Console.WriteLine("(S) para SI , (N) para NO.");
+    eleccion = Console.ReadLine();
+
 }
 else if (eleccion.ToUpper() == "N")
 {
